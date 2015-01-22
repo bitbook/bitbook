@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{337E3F9B-71A5-4915-A51D-1591FC79AAC5}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>BitBook.Test</RootNamespace>
+    <RootNamespace>BitBook.Tests</RootNamespace>
     <AssemblyName>TestSelfHostingNacy.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>

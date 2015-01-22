@@ -3,3 +3,6 @@ solution: BitBook.sln
 install:
   - nuget restore BitBook.sln
   - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release BitBook.sln
+  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./BitBook.Tests/bin/Release/BitBook.Tests.dll

@@ -1,10 +1,9 @@
 ﻿using NUnit.Framework;
 using Nancy;
 using Nancy.Testing;
-using BitBook;
 using BitBook.StaticSelfHost;
 
-namespace BitBook.Test
+namespace BitBook.Tests
 {
 	[TestFixture ()]
 	public class Test
