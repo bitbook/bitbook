@@ -1,0 +1,5 @@
+language: csharp
+solution: BitBook.sln
+install:
+  - nuget restore BitBook.sln
+  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
