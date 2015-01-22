@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook", "BitBook\BitBook.csproj", "{B7AA3633-C408-44F0-82E5-892DA65C23D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook.Tests", "BitBook.Test\BitBook.Tests.csproj", "{337E3F9B-71A5-4915-A51D-1591FC79AAC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook.Tests", "BitBook.Tests\BitBook.Tests.csproj", "{337E3F9B-71A5-4915-A51D-1591FC79AAC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

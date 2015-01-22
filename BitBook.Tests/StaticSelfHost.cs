@@ -9,7 +9,7 @@ namespace BitBook.Tests
 	public class Test
 	{
 		[Test]
-		public void Index_Should_return_200()
+		public void IndexShouldReturn200()
 		{
 			// Given
 			var browser = new Browser(with => with.Module(new IndexModule()));
@@ -22,7 +22,7 @@ namespace BitBook.Tests
 			Assert.That ("text/html", Is.EqualTo (result.ContentType));
 		}
 		[Test]
-		public void Serving_Static_Files_return_200()
+		public void ServingStaticFilesReturn200()
 		{
 			// Given
 			var browser = new Browser(new ApplicationBootstrapper());

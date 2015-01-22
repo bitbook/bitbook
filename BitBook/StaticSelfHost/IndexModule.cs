@@ -4,9 +4,7 @@
 	{
 		public IndexModule ()
 		{
-			Get [@"/"] = _ => {
-				return new Nancy.Responses.GenericFileResponse("static/index.html");
-			};
+			Get [@"/"] = _ => new Nancy.Responses.GenericFileResponse ("static/index.html");
 		}
 	}
 }
