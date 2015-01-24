@@ -22,17 +22,30 @@ namespace BitBook.Tests
 			Assert.That ("text/html", Is.EqualTo (result.ContentType));
 		}
 		[Test]
-		public void ServingStaticFilesReturn200()
+		public void ServingCSSFilesReturn200()
 		{
 			// Given
 			var browser = new Browser(new ApplicationBootstrapper());
 
 			// When
-			var result = browser.Get("/test.css");
+			var result = browser.Get("/css/bower.css");
 
 			// Then
 			Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
+			Assert.That ("text/css", Is.EqualTo (result.ContentType));
+		}
+		[Test]
+		public void ServingJSFilesReturn200()
+		{
+			// Given
+			var browser = new Browser(new ApplicationBootstrapper());
+
+			// When
+			var result = browser.Get("/js/bower.min.js");
+
+			// Then
+			Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
+			Assert.That ("application/javascript", Is.EqualTo (result.ContentType));
 		}
 	}
 }
-	
