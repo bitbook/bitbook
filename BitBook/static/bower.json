@@ -1,0 +1,29 @@
+{
+  "name": "BitBook",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bitbook/bitbook",
+  "authors": [
+    "Rhys Laval <rhyslaval@gmail.com>"
+  ],
+  "description": "Keeping the web social, open and free from corporations and government.",
+  "main": "css/main.css",
+  "keywords": [
+    "social",
+    "network"
+  ],
+  "license": "GNU",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "bootstrap": "~3.3.2",
+    "angular-latest": "~1.3.10",
+    "font-awesome": "~4.3.0"
+  }
+}
