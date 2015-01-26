@@ -41,9 +41,6 @@
     <Reference Include="Nancy.Testing">
       <HintPath>..\packages\Nancy.Testing.0.23.2\lib\net40\Nancy.Testing.dll</HintPath>
     </Reference>
-    <Reference Include="Fleck">
-      <HintPath>..\..\Documents\Temp\Fleck\src\Fleck\bin\Debug\Fleck.dll</HintPath>
-    </Reference>
     <Reference Include="Moq">
       <HintPath>..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
     </Reference>
@@ -60,6 +57,10 @@
     <ProjectReference Include="..\BitBook\BitBook.csproj">
       <Project>{B7AA3633-C408-44F0-82E5-892DA65C23D2}</Project>
       <Name>BitBook</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fleck\src\Fleck\Fleck.csproj">
+      <Project>{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}</Project>
+      <Name>Fleck</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
