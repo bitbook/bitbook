@@ -46,6 +46,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticSelfHost\ApplicationBootstrapper.cs" />
     <Compile Include="StaticSelfHost\IndexModule.cs" />
+    <Compile Include="StaticSelfHost\StaticSelfHost.cs" />
+    <Compile Include="WebSocketHost\WebSocketHost.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -73,6 +75,7 @@
   <ItemGroup>
     <Folder Include="static\" />
     <Folder Include="StaticSelfHost\" />
+    <Folder Include="WebSocketHost\" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>

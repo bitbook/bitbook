@@ -1,5 +1,5 @@
 ﻿using System;
-using Nancy.Hosting.Self;
+using BitBook.StaticSelfHost;
 
 namespace BitBook
 {
@@ -8,14 +8,13 @@ namespace BitBook
 		public static void Main (string[] args)
 		{
 			Console.WriteLine ("Starting up BitBook!");
-			Console.WriteLine ("Press enter to stop.!");
-			using (var host = new NancyHost(new Uri("http://localhost:56001")))
+			// Start up static web server
+			using (var host = new StaticSelfHost.StaticSelfHost("56001"))
 			{
-				host.Start();
-
+				Console.WriteLine ("Server started at http://localhost:56001");
 				// Keep window open!
+				Console.WriteLine ("Press enter to stop.!");
 				Console.ReadLine();
-				host.Stop ();
 			}
 		}
 	}
