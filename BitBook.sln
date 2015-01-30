@@ -5,28 +5,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook", "BitBook\BitBook.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook.Tests", "BitBook.Tests\BitBook.Tests.csproj", "{337E3F9B-71A5-4915-A51D-1591FC79AAC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleck", "Fleck\src\Fleck\Fleck.csproj", "{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleck.Tests", "Fleck\src\Fleck.Tests\Fleck.Tests.csproj", "{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Debug|x86.Build.0 = Debug|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|x86.ActiveCfg = Release|Any CPU
-		{01AECC7B-C5FC-451C-8D3B-C400F0C9883C}.Release|x86.Build.0 = Release|Any CPU
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Debug|x86.Build.0 = Debug|Any CPU
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Release|x86.ActiveCfg = Release|Any CPU
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Release|x86.Build.0 = Release|Any CPU
-		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Debug|x86.Build.0 = Debug|Any CPU
-		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Release|x86.ActiveCfg = Release|Any CPU
-		{8B12D929-AFA9-4307-BEFF-2ED0F1070FEE}.Release|x86.Build.0 = Release|Any CPU
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Debug|x86.ActiveCfg = Debug|x86
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Debug|x86.Build.0 = Debug|x86
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Release|x86.ActiveCfg = Release|x86
