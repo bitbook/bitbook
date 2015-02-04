@@ -5,7 +5,7 @@ using BitBook.StaticSelfHost;
 
 namespace BitBook.Tests
 {
-	[TestFixture ()]
+	[TestFixture]
 	public class Test
 	{
 		[Test]
@@ -33,6 +33,19 @@ namespace BitBook.Tests
 			// Then
 			Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
 			Assert.That ("text/css", Is.EqualTo (result.ContentType));
+		}
+		[Test]
+		public void ServingFontFilesReturn200()
+		{
+			// Given
+			var browser = new Browser(new ApplicationBootstrapper());
+
+			// When
+			var result = browser.Get("/fonts/fontawesome-webfont.ttf");
+
+			// Then
+			Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
+			Assert.That ("application/x-font-ttf", Is.EqualTo (result.ContentType));
 		}
 		[Test]
 		public void ServingJSFilesReturn200()
