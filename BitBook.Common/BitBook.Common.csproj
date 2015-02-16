@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2D40D3AE-24AE-4062-A62D-17AD27A03902}</ProjectGuid>
+    <ProjectGuid>{A0DD266A-59AC-4E0F-A4F9-0713EA958046}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>PHT.Tests</RootNamespace>
-    <AssemblyName>PHT.Tests</AssemblyName>
+    <RootNamespace>BitBook.Common</RootNamespace>
+    <AssemblyName>BitBook.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -29,22 +29,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Test.cs" />
-    <Compile Include="TestJSONSerializedEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PHT\PHT.csproj">
-      <Project>{92EB1B43-2F2F-4189-B815-B6296C5EAE27}</Project>
-      <Name>PHT</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
