@@ -5,6 +5,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook", "BitBook\BitBook.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook.Tests", "BitBook.Tests\BitBook.Tests.csproj", "{337E3F9B-71A5-4915-A51D-1591FC79AAC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DHT", "All\DHT.csproj", "{C280603E-12F3-49F9-8A7A-064F761F327E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHT", "PHT\PHT.csproj", "{92EB1B43-2F2F-4189-B815-B6296C5EAE27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHT.Tests", "PHT.Tests\PHT.Tests.csproj", "{6FE04438-0419-4735-895F-6694E7635559}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,10 +21,22 @@ Global
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Debug|x86.Build.0 = Debug|Any CPU
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Release|x86.ActiveCfg = Release|Any CPU
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Release|x86.Build.0 = Release|Any CPU
+		{6FE04438-0419-4735-895F-6694E7635559}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6FE04438-0419-4735-895F-6694E7635559}.Debug|x86.Build.0 = Debug|Any CPU
+		{6FE04438-0419-4735-895F-6694E7635559}.Release|x86.ActiveCfg = Release|Any CPU
+		{6FE04438-0419-4735-895F-6694E7635559}.Release|x86.Build.0 = Release|Any CPU
+		{92EB1B43-2F2F-4189-B815-B6296C5EAE27}.Debug|x86.ActiveCfg = Debug|x86
+		{92EB1B43-2F2F-4189-B815-B6296C5EAE27}.Debug|x86.Build.0 = Debug|x86
+		{92EB1B43-2F2F-4189-B815-B6296C5EAE27}.Release|x86.ActiveCfg = Release|x86
+		{92EB1B43-2F2F-4189-B815-B6296C5EAE27}.Release|x86.Build.0 = Release|x86
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Debug|x86.ActiveCfg = Debug|x86
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Debug|x86.Build.0 = Debug|x86
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Release|x86.ActiveCfg = Release|x86
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Release|x86.Build.0 = Release|x86
+		{C280603E-12F3-49F9-8A7A-064F761F327E}.Debug|x86.ActiveCfg = Debug|x86
+		{C280603E-12F3-49F9-8A7A-064F761F327E}.Debug|x86.Build.0 = Debug|x86
+		{C280603E-12F3-49F9-8A7A-064F761F327E}.Release|x86.ActiveCfg = Release|x86
+		{C280603E-12F3-49F9-8A7A-064F761F327E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
