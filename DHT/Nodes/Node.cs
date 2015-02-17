@@ -4,13 +4,14 @@ using System.Text;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace All.Nodes
+namespace DHT.Nodes
 {
 	public class Node : IComparable<Node>, IEquatable<Node>
 	{
 		public static readonly int MaxFailures = 4;
 
-		IPEndPoint endpoint;
+		System.Net.IPEndPoint endpoint;
+
 		private int id;
 		int failedCount;
 		DateTime lastSeen;
@@ -18,7 +19,6 @@ namespace All.Nodes
 		public IPEndPoint EndPoint
 		{
 			get { return endpoint; }
-
 		}
 
 		public int FailedCount

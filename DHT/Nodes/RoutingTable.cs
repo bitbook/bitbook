@@ -1,11 +1,8 @@
-﻿using System;
-using System.Net.Sockets;
-using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System;
 using System.Net;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 
-namespace All.Nodes
+namespace DHT.Nodes
 {
 	public class RoutingTable
 	{

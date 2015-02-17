@@ -1,8 +1,8 @@
 ﻿using System;
-using All.Nodes;
+using DHT.Nodes;
 using System.Configuration;
 
-namespace All.Messages
+namespace DHT.Messages
 {
 	public class Message
 	{

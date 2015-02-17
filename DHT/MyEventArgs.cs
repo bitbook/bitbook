@@ -1,7 +1,7 @@
 ﻿using System;
-using All.Messages;
+using DHT.Messages;
 
-namespace All
+namespace DHT
 {
 	public class MyEventArgs : EventArgs
 	{

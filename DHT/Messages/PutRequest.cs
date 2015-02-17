@@ -2,7 +2,7 @@
 using System.Security.Cryptography.X509Certificates;
 using System.Net.NetworkInformation;
 
-namespace All.Messages
+namespace DHT.Messages
 {
 	public class PutRequest : Message
 	{

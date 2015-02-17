@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{F687311F-B821-48CB-85A9-55A28D1906F7}</ProjectGuid>
+    <ProjectGuid>{0C340FF8-B651-4B44-895A-382C8150BA84}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>DHT.IntergrationTest</RootNamespace>
     <AssemblyName>DHT.IntergrationTest</AssemblyName>

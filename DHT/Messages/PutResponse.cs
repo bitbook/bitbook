@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace All.Messages
+namespace DHT.Messages
 {
 	public class PutResponse : Message
 	{

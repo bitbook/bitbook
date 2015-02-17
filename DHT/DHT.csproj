@@ -4,8 +4,8 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{C280603E-12F3-49F9-8A7A-064F761F327E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>All</RootNamespace>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DHT</RootNamespace>
     <AssemblyName>All</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -32,15 +32,11 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="NetworkCommsDotNetComplete">
-      <HintPath>..\..\..\Downloads\NetworkCommsDotNet_v3.0.3_Personal\DLLs\Net40\Merged\NetworkCommsDotNetComplete.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\ExternalItems\NetworkCommsDotNetComplete.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Server.cs" />
     <Compile Include="MyEventArgs.cs" />
     <Compile Include="Nodes\Bucket.cs" />
     <Compile Include="Nodes\Node.cs" />
@@ -49,10 +45,18 @@
     <Compile Include="Messages\PutRequest.cs" />
     <Compile Include="Messages\PutResponse.cs" />
     <Compile Include="Messages\GetPeersResponse.cs" />
+    <Compile Include="DynamicHashTable.cs" />
+    <Compile Include="Listener.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Nodes\" />
     <Folder Include="Messages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PHT\PHT.csproj">
+      <Project>{92EB1B43-2F2F-4189-B815-B6296C5EAE27}</Project>
+      <Name>PHT</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

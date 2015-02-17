@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace All.Nodes
+namespace DHT.Nodes
 {
 	/// <summary>
 	/// This class holds a maximum amount of 8 Nodes and is itself a child of a RoutingTable

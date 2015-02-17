@@ -1,25 +1,26 @@
-﻿using System;
-using NetworkCommsDotNet;
+﻿using NetworkCommsDotNet;
 using NetworkCommsDotNet.Connections;
-using All.Messages;
 using Newtonsoft.Json;
-using Microsoft.CSharp;
+using DHT.Messages;
+using System.Net;
+using System;
 
-namespace All
+namespace DHT
 {
-	public class Server
+	public class Listener
 	{
-		public Server (int port)
+		public Listener (int port)
 		{
 			//Trigger the method PrintIncomingMessage when a packet of type 'Message' is received
 			//We expect the incoming object to be a string which we state explicitly by using <string>
 			NetworkComms.AppendGlobalIncomingPacketHandler<string>("Message", PrintIncomingMessage);
 			//Start listening for incoming connections
-			Connection.StartListening(ConnectionType.TCP, new System.Net.IPEndPoint(System.Net.IPAddress.Any, port));
+			Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, port));
 
 			//Print out the IPs and ports we are now listening on
 			Console.WriteLine("Server listening for TCP connection on:"+port);
 		}
+
 		public delegate void MyEventHandler(object source, MyEventArgs e);
 		public event MyEventHandler OnMessage;
 
