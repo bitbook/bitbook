@@ -1,4 +1,76 @@
-@media (min-width: 768px) { .container { max-width: 750px; } }
-body{
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hm {
+        display: none
+    }
+
+    .navbar-nav > li {
+        float: right;
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body.loggedIn {
     margin-top: 70px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFCF07;
+}
+
+a {
+    color: darkcyan;
+}
+/*
+ * Submit Form
+ */
+form textarea.form-control, form input.form-control{
+    margin-bottom: 10px;
+}
+/*
+ * New User Screen
+ */
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#newUser {
+    color: white;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: url("../newUsersBackground.jpg") no-repeat 20% top;
+    background-size: cover;
+}
+
+#newUser span {
+    color: #FFCF07;
+}
+
+#newUser h1, #newUser p, #newUser ul {
+    margin-top: 0;
+}
+
+#newUser form {
+    width: 30%;
+    min-width: 15em;
+    margin: 1em;
+}
+
+#newUser .btn-link {
+    border: 1px solid grey;
+    color: #f5f5f5;
+    background: black;
+    border-radius: 10px;
+
 }

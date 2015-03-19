@@ -1,0 +1,6 @@
+<form accept-charset="UTF-8" ng-controller="StatusFormController" ng-submit="submitStatus()">
+    <textarea class="form-control counted" ng-model="message" placeholder="Type in your message" rows="2">
+    </textarea>
+    <h6 class="pull-right" id="counter"> {{maxLength - message.length}} characters remaining</h6>
+    <button class="btn btn-success" type="submit">Post <i class="fa fa-paper-plane"></i></button>
+</form>

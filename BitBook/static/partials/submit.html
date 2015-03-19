@@ -1,0 +1,8 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <ul class="nav nav-tabs" style="padding-left: 5px;border-bottom: none;">
+            <li ng-repeat="module in Modules" role="presentation" ng-class="{active:submit.Type==module}"><a ng-click="submit.Type=module">{{module}}</a></li>
+        </ul>
+        <div ng-include src="getModuleSubmitUrl(submit.Type)"></div>
+    </div>
+</div>

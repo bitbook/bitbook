@@ -1,0 +1,5 @@
+<form accept-charset="UTF-8" name="imageForm" ng-controller="ModuleImageFormController" ng-submit="submitStatus()">
+    <input type="url" class="form-control" ng-model="ImageUrl" required placeholder="http://example.com/sampleImage.gif">
+    <h6 class="pull-right" ng-hide="imageForm.$valid" id="counter">Please enter a valid URL!</h6>
+    <button class="btn btn-success" type="submit">Post <i class="fa fa-paper-plane"></i></button>
+</form>
