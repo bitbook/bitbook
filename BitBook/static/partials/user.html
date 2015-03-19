@@ -5,10 +5,10 @@
     </a>
 
     <div class="media-body">
-        <h3 class="media-heading"><a href="profile.html">{{user.nick}}</a></h3>
-        <small>{{user.desc}}</small>
+        <h3 class="media-heading"><a href="profile.html">{{userProfile.nick}}</a></h3>
+        <small>{{userProfile.desc}}</small>
     </div>
 </div>
 <br>
-<div ng-show="nick==user.nick" ng-include src="'partials/submit.html'"></div>
+<div ng-show="user.nick==userProfile.nick" ng-include src="'partials/submit.html'"></div>
 <div ng-include src="'partials/listStatus.html'"></div>

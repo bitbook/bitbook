@@ -17,10 +17,15 @@
 html, body {
     height: 100%;
     margin: 0;
+
 }
 
+body{
+    background: black;
+}
 body.loggedIn {
     margin-top: 70px;
+    background: white;
 }
 
 .navbar-inverse .navbar-brand {
