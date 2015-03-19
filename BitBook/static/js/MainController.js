@@ -1,7 +1,5 @@
 app.controller('YellaController', function ($scope, $rootScope, currentUser) {
-    console.log(currentUser.user());
     $rootScope.user = currentUser.user();
-    console.log($rootScope.user);
 });
 app.controller('RegisterController', function ($scope, $state, $rootScope, currentUser, yellaService) {
     $scope.nameTaken = false;

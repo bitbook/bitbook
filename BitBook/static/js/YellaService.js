@@ -74,7 +74,6 @@ app.service('dht', function () {
     };
     this.put = function (key, value) {
         this.sampleData[key] = value;
-        console.log(this.sampleData);
         return true;
     };
 });
