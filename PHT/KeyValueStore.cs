@@ -1,8 +1,6 @@
 ﻿using System;
 using Interfaces;
 using System.Threading.Tasks;
-using System.Reactive;
-
 namespace PHT
 {
 	public class KeyValueStore : IDisposable
