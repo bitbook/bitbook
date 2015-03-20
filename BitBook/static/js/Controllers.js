@@ -32,7 +32,7 @@ app.controller('UserController', function ($scope,$rootScope, users) {
         $scope.users = args;
     });
     // the above lines seems over complicated just to update the side bar with the new user
-    // Module Systen
+    // Module System
     $scope.Modules = ["Status", "Image"];
     $scope.submit = [];
     $scope.submit.Type = $scope.Modules[0];
