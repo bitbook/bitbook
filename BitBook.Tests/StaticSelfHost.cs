@@ -60,5 +60,31 @@ namespace BitBook.Tests
 			Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
 			Assert.That ("application/javascript", Is.EqualTo (result.ContentType));
 		}
+		[Test]
+		public void ServingPartialFilesReturn200()
+		{
+			// Given
+			var browser = new Browser(new ApplicationBootstrapper());
+
+			// When
+			var result = browser.Get("/partials/index.html");
+
+			// Then
+			Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
+			Assert.That ("text/html", Is.EqualTo (result.ContentType));
+		}
+		[Test]
+		public void ServingImgFilesReturn200()
+		{
+			// Given
+			var browser = new Browser(new ApplicationBootstrapper());
+
+			// When
+			var result = browser.Get("/newUsersBackground.jpg");
+
+			// Then
+			Assert.AreEqual(HttpStatusCode.OK, result.StatusCode);
+			Assert.That ("image/jpeg", Is.EqualTo (result.ContentType));
+		}
 	}
 }

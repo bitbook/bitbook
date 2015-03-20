@@ -37,4 +37,10 @@
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DHT\DHT.csproj">
+      <Project>{C280603E-12F3-49F9-8A7A-064F761F327E}</Project>
+      <Name>DHT</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
