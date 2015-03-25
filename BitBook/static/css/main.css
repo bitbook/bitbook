@@ -31,7 +31,9 @@ body.loggedIn {
 .navbar-inverse .navbar-brand {
     color: #FFCF07;
 }
-
+hr{
+    margin:15px 10px 0 10px;
+}
 a {
     color: darkcyan;
 }
