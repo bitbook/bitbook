@@ -97,7 +97,6 @@ app.service('dht', function () {
 app.service('yellaService', function (dht) {
     this.getUsers = function () {
         var users = dht.get("friends");
-        console.log(dht.get("friends"));
         var userList = [];
         users.forEach(function (element) {
             userList.push(dht.get(element));

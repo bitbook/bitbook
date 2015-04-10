@@ -3,7 +3,7 @@ app.controller('YellaController', function ($scope, $rootScope, currentUser, use
     // Get List of Users for right hand side.
     $rootScope.users = users;
 });
-app.controller('RegisterController', function ($scope, $state, $rootScope, currentUser, yellaService, users) {
+app.controller('RegisterController', function ($scope, $state, $rootScope, currentUser, yellaService) {
     // hide name taken warning
     $scope.nameTaken = false;
     // form submition code

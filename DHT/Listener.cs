@@ -21,6 +21,11 @@ namespace DHT
 			Console.WriteLine("Server listening for TCP connection on:"+port);
 		}
 
+		public void SendMessage(int port, Message message){
+			NetworkComms.SendObject("Message", "127.0.0.1", port, JsonConvert.SerializeObject (message));
+			Console.WriteLine ("SentMessage to "+port);
+		}
+
 		public delegate void MyEventHandler(object source, MyEventArgs e);
 		public event MyEventHandler OnMessage;
 

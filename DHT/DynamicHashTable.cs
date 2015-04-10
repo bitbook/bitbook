@@ -13,6 +13,7 @@ namespace DHT
 		RoutingTable _routingTable = null;
 		int _serverPort = 0 ;
 		KeyValueStore _pht = new KeyValueStore("Test");
+		Listener server;
 
 		public DynamicHashTable (int port)
 		{
@@ -28,7 +29,7 @@ namespace DHT
 
 			if (_routingTable.GetNode (e.Get ().Id) == null) {
 				_routingTable.Add (new Node (e.Get ().Id, new IPEndPoint (IPAddress.Loopback, e.Get ().Port)));
-				SendMessage (e.Get ().Port, new Message () {
+				server.SendMessage (e.Get ().Port, new Message () {
 					Id = _routingTable.LocalNode.Id,
 					Port = _serverPort,
 					MessageT = "Annonce",
@@ -49,18 +50,13 @@ namespace DHT
 
 		public void BroadcastMessage(){
 			foreach (var item in _routingTable.GetAllNodes ()) {
-				SendMessage (item.EndPoint.Port,new Message(){Id = _routingTable.LocalNode.Id, Port = _serverPort, MessageT = "TestBroadcast", Type = "Ping" });
+				server.SendMessage (item.EndPoint.Port,new Message(){Id = _routingTable.LocalNode.Id, Port = _serverPort, MessageT = "TestBroadcast", Type = "Ping" });
 			}
-		}
-
-		public void SendMessage(int port, Message message){
-			NetworkComms.SendObject("Message", "127.0.0.1", port, JsonConvert.SerializeObject (message));
-			Console.WriteLine ("SentMessage to "+port);
 		}
 
 		public void AddPeer (int p2)
 		{
-			SendMessage (p2,new Message(){Id = _routingTable.LocalNode.Id, Port = _serverPort, MessageT = "Hello", Type = "Ping" });
+			server.SendMessage (p2,new Message(){Id = _routingTable.LocalNode.Id, Port = _serverPort, MessageT = "Hello", Type = "Ping" });
 		}
 
 		public void CheckListOfPeers(string s){
@@ -71,7 +67,7 @@ namespace DHT
 					string[] ipPort = ip.Split(':');
 					if (!_routingTable.CheckIP (int.Parse(ipPort [1]))) {
 						Console.WriteLine ("Found New");
-						SendMessage (int.Parse(ipPort [1]),new Message(){Id = _routingTable.LocalNode.Id, Port = _serverPort, MessageT = "Annonce", Type = "Ping" });
+						server.SendMessage (int.Parse(ipPort [1]),new Message(){Id = _routingTable.LocalNode.Id, Port = _serverPort, MessageT = "Annonce", Type = "Ping" });
 					}
 				}
 			}
@@ -89,7 +85,7 @@ namespace DHT
 				MessageT = listOfPeers,
 				Type = "ListPeers"
 			};
-			SendMessage (node.EndPoint.Port, message);
+			server.SendMessage (node.EndPoint.Port, message);
 			Console.WriteLine ("SendListOfPeers to "+node.EndPoint.Port);
 		}
 

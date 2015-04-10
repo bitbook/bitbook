@@ -77,5 +77,13 @@
       <Project>{B7AA3633-C408-44F0-82E5-892DA65C23D2}</Project>
       <Name>BitBook</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BitBook.StaticSelfHost\BitBook.StaticSelfHost.csproj">
+      <Project>{50FA7FE9-FFC7-4783-A28C-C51F4CB54624}</Project>
+      <Name>BitBook.StaticSelfHost</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BitBook.WebSocketHost\BitBook.WebSocketHost.csproj">
+      <Project>{A63CE5D6-DAC3-41E0-8C91-87EDFA9E000A}</Project>
+      <Name>BitBook.WebSocketHost</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

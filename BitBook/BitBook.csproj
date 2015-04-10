@@ -31,27 +31,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Nancy">
-      <HintPath>..\packages\Nancy.1.0.0\lib\net40\Nancy.dll</HintPath>
-    </Reference>
-    <Reference Include="Nancy.Hosting.Self">
-      <HintPath>..\packages\Nancy.Hosting.Self.1.0.0\lib\net40\Nancy.Hosting.Self.dll</HintPath>
-    </Reference>
-    <Reference Include="Fleck">
-      <HintPath>..\packages\Fleck.0.12.0.38\lib\net40\Fleck.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticSelfHost\ApplicationBootstrapper.cs" />
-    <Compile Include="StaticSelfHost\IndexModule.cs" />
-    <Compile Include="StaticSelfHost\StaticSelfHost.cs" />
-    <Compile Include="WebSocketHost\WebSocketHost.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="static\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -136,8 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
-    <Folder Include="StaticSelfHost\" />
-    <Folder Include="WebSocketHost\" />
     <Folder Include="static\fonts\" />
     <Folder Include="static\Modules\" />
     <Folder Include="static\css\" />
@@ -157,6 +141,14 @@
     <ProjectReference Include="..\DHT\DHT.csproj">
       <Project>{C280603E-12F3-49F9-8A7A-064F761F327E}</Project>
       <Name>DHT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BitBook.StaticSelfHost\BitBook.StaticSelfHost.csproj">
+      <Project>{50FA7FE9-FFC7-4783-A28C-C51F4CB54624}</Project>
+      <Name>BitBook.StaticSelfHost</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BitBook.WebSocketHost\BitBook.WebSocketHost.csproj">
+      <Project>{A63CE5D6-DAC3-41E0-8C91-87EDFA9E000A}</Project>
+      <Name>BitBook.WebSocketHost</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

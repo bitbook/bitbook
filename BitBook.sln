@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DHT.IntergrationTest", "DHT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DHT", "DHT\DHT.csproj", "{C280603E-12F3-49F9-8A7A-064F761F327E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook.StaticSelfHost", "BitBook.StaticSelfHost\BitBook.StaticSelfHost.csproj", "{50FA7FE9-FFC7-4783-A28C-C51F4CB54624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook.WebSocketHost", "BitBook.WebSocketHost\BitBook.WebSocketHost.csproj", "{A63CE5D6-DAC3-41E0-8C91-87EDFA9E000A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -33,10 +37,18 @@ Global
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Debug|x86.Build.0 = Debug|Any CPU
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Release|x86.ActiveCfg = Release|Any CPU
 		{337E3F9B-71A5-4915-A51D-1591FC79AAC5}.Release|x86.Build.0 = Release|Any CPU
+		{50FA7FE9-FFC7-4783-A28C-C51F4CB54624}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50FA7FE9-FFC7-4783-A28C-C51F4CB54624}.Debug|x86.Build.0 = Debug|Any CPU
+		{50FA7FE9-FFC7-4783-A28C-C51F4CB54624}.Release|x86.ActiveCfg = Release|Any CPU
+		{50FA7FE9-FFC7-4783-A28C-C51F4CB54624}.Release|x86.Build.0 = Release|Any CPU
 		{92EB1B43-2F2F-4189-B815-B6296C5EAE27}.Debug|x86.ActiveCfg = Debug|x86
 		{92EB1B43-2F2F-4189-B815-B6296C5EAE27}.Debug|x86.Build.0 = Debug|x86
 		{92EB1B43-2F2F-4189-B815-B6296C5EAE27}.Release|x86.ActiveCfg = Release|x86
 		{92EB1B43-2F2F-4189-B815-B6296C5EAE27}.Release|x86.Build.0 = Release|x86
+		{A63CE5D6-DAC3-41E0-8C91-87EDFA9E000A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A63CE5D6-DAC3-41E0-8C91-87EDFA9E000A}.Debug|x86.Build.0 = Debug|Any CPU
+		{A63CE5D6-DAC3-41E0-8C91-87EDFA9E000A}.Release|x86.ActiveCfg = Release|Any CPU
+		{A63CE5D6-DAC3-41E0-8C91-87EDFA9E000A}.Release|x86.Build.0 = Release|Any CPU
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Debug|x86.ActiveCfg = Debug|x86
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Debug|x86.Build.0 = Debug|x86
 		{B7AA3633-C408-44F0-82E5-892DA65C23D2}.Release|x86.ActiveCfg = Release|x86
