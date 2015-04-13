@@ -62,13 +62,4 @@ describe('UserController function', function () {
         expect(yellaService.getUserStatusList('milkybar')[0].data.imageSrc).toEqual("http://www.crosscountrytrains.co.uk/media/22701/trains_to_bristol.jpg");
         expect(yellaService.getUserStatusList('milkybar')[1].data.status).toEqual("Don't feel bad. It's not procrastinating, if your drinking coffee. Its Procaffeinating.");
     }));
-
-    it('check newStatus', inject(function (yellaService) {
-        expect(yellaService.getUserStatusList('milkybar')[0].nick).toEqual("milkybar");
-        expect(yellaService.getUserStatusList('milkybar')[1].nick).toEqual("milkybar");
-        expect(yellaService.getUserStatusList('milkybar')[0].type).toEqual("Image");
-        expect(yellaService.getUserStatusList('milkybar')[1].type).toEqual("Status");
-        expect(yellaService.getUserStatusList('milkybar')[0].data.imageSrc).toEqual("http://www.crosscountrytrains.co.uk/media/22701/trains_to_bristol.jpg");
-        expect(yellaService.getUserStatusList('milkybar')[1].data.status).toEqual("Don't feel bad. It's not procrastinating, if your drinking coffee. Its Procaffeinating.");
-    }));
 });
