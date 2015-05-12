@@ -16,14 +16,12 @@ namespace DHT
 			NetworkComms.AppendGlobalIncomingPacketHandler<string>("Message", PrintIncomingMessage);
 			//Start listening for incoming connections
 			Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, port));
-
-			//Print out the IPs and ports we are now listening on
-			Console.WriteLine("Server listening for TCP connection on:"+port);
 		}
 
 		public void SendMessage(int port, Message message){
-			NetworkComms.SendObject("Message", "127.0.0.1", port, JsonConvert.SerializeObject (message));
-			Console.WriteLine ("SentMessage to "+port);
+			var mess =  JsonConvert.SerializeObject (message);
+			NetworkComms.SendObject("Message", "127.0.0.1", port, mess);
+			//Console.WriteLine ("SentMessage to "+mess);
 		}
 
 		public delegate void MyEventHandler(object source, MyEventArgs e);
@@ -41,7 +39,7 @@ namespace DHT
 			m = JsonConvert.DeserializeObject<Message> (message);
 			OnMessage (this, new MyEventArgs (m));
 
-			Console.WriteLine("\nA message was received from " + connection.ToString() + " which said '" + message + "'.");
+			//Console.WriteLine("\nA message was received from " + connection.ToString() + " which said '" + message + "'.");
 		}
 	}
 }

@@ -7,7 +7,7 @@ namespace DHT.Nodes
 	/// <summary>
 	/// This class holds a maximum amount of 8 Nodes and is itself a child of a RoutingTable
 	/// </summary>
-	internal class Bucket
+	public class Bucket
 	{
 		List<Node> nodes = new List<Node>(50);
 		Node replacement;

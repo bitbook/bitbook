@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{F687311F-B821-48CB-85A9-55A28D1906F7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DHT.IntergrationTest</RootNamespace>
+    <RootNamespace>DHT.ConsoleTest</RootNamespace>
     <AssemblyName>DHT.IntergrationTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -41,6 +41,10 @@
     <ProjectReference Include="..\DHT\DHT.csproj">
       <Project>{C280603E-12F3-49F9-8A7A-064F761F327E}</Project>
       <Name>DHT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PHT.Tests\PHT.Tests.csproj">
+      <Project>{2D40D3AE-24AE-4062-A62D-17AD27A03902}</Project>
+      <Name>PHT.Tests</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

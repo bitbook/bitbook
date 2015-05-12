@@ -8,7 +8,7 @@ namespace DHT.Nodes
 	{
 		static readonly Random random = new Random();
 		private readonly Node localNode;
-		private Bucket bucket = new Bucket();
+		public Bucket bucket = new Bucket();
 
 		public Node LocalNode
 		{
@@ -26,7 +26,7 @@ namespace DHT.Nodes
 				throw new ArgumentNullException("localNode");
 
 			this.localNode = localNode;
-			Console.WriteLine (localNode.Id);
+			Console.WriteLine ("Node ID assigned : "+localNode.Id);
 			localNode.Seen();
 			Add();
 		}
@@ -37,19 +37,13 @@ namespace DHT.Nodes
 
 		public static int CreateNewID ()
 		{
-			return random.Next ();
+			return random.Next ()/10000000;
 		}
 
-		public bool Add(Node node)
+		public Node Add(Node node)
 		{
-			if (node == null)
-				throw new ArgumentNullException("node");
-			
-			if (bucket.Nodes.Contains(node))
-				return false;
-
-			bool added = bucket.Add(node);
-			return added;
+			bucket.Add(node);
+			return node;
 		}
 
 		public Node GetNode(int id){
@@ -68,6 +62,7 @@ namespace DHT.Nodes
 		{
 			return bucket.Nodes.Count;
 		}
+
 		internal void Clear()
 		{
 			bucket.Clear();

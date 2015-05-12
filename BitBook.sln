@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHT.Tests", "PHT.Tests\PHT.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DHT.ConsoleTest", "DHT.ConsoleTest\DHT.ConsoleTest.csproj", "{F687311F-B821-48CB-85A9-55A28D1906F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DHT.IntergrationTest", "DHT.IntergrationTest\DHT.IntergrationTest.csproj", "{0C340FF8-B651-4B44-895A-382C8150BA84}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DHT", "DHT\DHT.csproj", "{C280603E-12F3-49F9-8A7A-064F761F327E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBook.StaticSelfHost", "BitBook.StaticSelfHost\BitBook.StaticSelfHost.csproj", "{50FA7FE9-FFC7-4783-A28C-C51F4CB54624}"
@@ -25,10 +23,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C340FF8-B651-4B44-895A-382C8150BA84}.Debug|x86.ActiveCfg = Debug|x86
-		{0C340FF8-B651-4B44-895A-382C8150BA84}.Debug|x86.Build.0 = Debug|x86
-		{0C340FF8-B651-4B44-895A-382C8150BA84}.Release|x86.ActiveCfg = Release|x86
-		{0C340FF8-B651-4B44-895A-382C8150BA84}.Release|x86.Build.0 = Release|x86
 		{2D40D3AE-24AE-4062-A62D-17AD27A03902}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{2D40D3AE-24AE-4062-A62D-17AD27A03902}.Debug|x86.Build.0 = Debug|Any CPU
 		{2D40D3AE-24AE-4062-A62D-17AD27A03902}.Release|x86.ActiveCfg = Release|Any CPU

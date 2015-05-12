@@ -58,5 +58,9 @@
       <Project>{92EB1B43-2F2F-4189-B815-B6296C5EAE27}</Project>
       <Name>PHT</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PHT.Tests\PHT.Tests.csproj">
+      <Project>{2D40D3AE-24AE-4062-A62D-17AD27A03902}</Project>
+      <Name>PHT.Tests</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
